@@ -13,7 +13,7 @@ function Landing() {
             We provide high quality beans, good taste, and healthy meals made by
             love just for you. Start your day with us for a bigger smile!
           </h3>
-          <Button label="Get Started!" className="w-6/12" />
+          <Button style="secondary" label="Get Started!" className="!w-6/12" />
         </div>
         <div className="bg-red-500"></div>
         <div className="bg-red-500 col-span-2"></div>
