@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'coffee': "url('/src/assets/images/bg_landing.webp')"
+      },
+      lineHeight: {
+        '5xl': "3rem"
+      }
+    },
   },
   plugins: [],
 }
