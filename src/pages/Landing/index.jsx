@@ -1,5 +1,30 @@
 import React from "react";
 import Button from "../../components/Button/Button";
+import LegendInfo from "../../components/LegendInfo/LegendInfo";
+import icLocation from "../../assets/icon/ic_location.svg";
+import icUser from "../../assets/icon/ic_user.svg";
+import icLove from "../../assets/icon/ic_love.svg";
+
+const item = [
+  {
+    id: 0,
+    image: icUser,
+    title: "90+",
+    subtitle: "Staff",
+  },
+  {
+    id: 1,
+    image: icLocation,
+    title: "30+",
+    subtitle: "Customers",
+  },
+  {
+    id: 2,
+    image: icLove,
+    title: "800+",
+    subtitle: "Stores",
+  },
+];
 
 function Landing() {
   return (
@@ -16,7 +41,9 @@ function Landing() {
           <Button style="secondary" label="Get Started!" className="!w-6/12" />
         </div>
         <div className="bg-red-500"></div>
-        <div className="bg-red-500 col-span-2"></div>
+        <div className="bg-red-500 col-span-2">
+          <LegendInfo item={item} />
+        </div>
       </div>
     </div>
   );
